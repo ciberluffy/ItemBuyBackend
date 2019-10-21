@@ -40,9 +40,9 @@ function saveItemBuy(req, res) {
                res.status(404).send({message: 'No se ha guardado el itemBuy'});
             }
             else {
-               res.status(200).send({
-                  itemBuy: itemBuyStored
-               });
+               res.status(200).send(
+                  itemBuyStored
+               );
             }
          }
       });
@@ -92,9 +92,9 @@ function updateItemBuy(req, res) {
             });
          }
          else {
-            res.status(200).send({
-               itemBuy: itemBuyUpdated
-            });
+            res.status(200).send(
+               itemBuyUpdated
+            );
          }
       }
    });
